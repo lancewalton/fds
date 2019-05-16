@@ -12,9 +12,15 @@ class RingNode(val name: String) {
     map.put(key, value)
   }
 
-  def get(key: String): Any = map.get(key)
+  def get(key: String): Option[Any] = map.get(key)
+
+  def remove(key: String): Unit = {
+    map.remove(key)
+  }
 
   def size: Int = map.size
+
+  def keys(): Set[String] = map.keys.toSet
 }
 
 object RingNode {
