@@ -13,7 +13,7 @@ object MovieCache extends App {
   val cache: Cache = CacheFactory.connect("127.0.0.1")
 
   private[cache] val base: String = "https://api.themoviedb.org/3/"
-  private[cache] val key: String = "?api_key=6b1bfe70eec8e1d2ec17c58fd89916eb"
+  private[cache] val key: String = "?api_key=???"
 
   val ids: Seq[String] = getPopularMovieIDs
   System.out.println( ids )

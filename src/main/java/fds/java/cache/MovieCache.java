@@ -17,7 +17,7 @@ public class MovieCache {
 
     static final String base = "https://api.themoviedb.org/3/";
     // TODO replace ??? with real key to access the movie database
-    static final String key = "?api_key=6b1bfe70eec8e1d2ec17c58fd89916eb";
+    static final String key = "?api_key=???";
 
     static Cache cache = CacheFactory.connect("127.0.0.1");
 
