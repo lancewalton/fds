@@ -5,9 +5,9 @@ import com.zink.cache.{CacheFactory, Cache}
 /**
   * Created by nigel on 02/12/2015.
   */
-object CacheClient {
+object CacheClient extends App {
 
-    val cache: Cache = CacheFactory.connect("192.168.99.100")
+    val cache: Cache = CacheFactory.connect("127.0.0.1")
     cache.set("BBC1", "http://www.bbc.co.uk/iplayer/tv/bbc_one")
     System.out.println(cache.get("BBC1"))
     System.out.println(cache.get("BBC2"))
